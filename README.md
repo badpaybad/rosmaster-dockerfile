@@ -30,7 +30,7 @@ Eg: Your docker container run in computer with ip: 192.168.1.123
 
 And you run docker above , the master uri: 192.168.1.123:11311
 
-You have other computers with ip: 192.168.1.124, 192.168.1.125
+You have other computers or (other docker work as nodes) with ip: 192.168.1.124, 192.168.1.125
 
 So you shoud do : 
 
