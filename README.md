@@ -1,5 +1,6 @@
 # ROS noetic ( ubuntu focal)
 
+        based on this http://wiki.ros.org/action/login/docker/Tutorials/Docker
 # ros-dockerfile
 ros docker, ros docker use nginx as proxy
 
