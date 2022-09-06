@@ -22,3 +22,21 @@ we can try run ROS_IP=localhost then use nginx as proxy to forward to localhost
 
                     docker build -f "rocorenginx.Dockerfile" -t rosmaster-nginx .
                     docker run -d --restart always -it -p 11311:80  --name rosmaster-nginx-test rosmaster-nginx
+
+# guide ros nodes connect to rosmaster ( rosmater run as docker container )
+
+Eg: Your docker container run in computer with ip: 192.168.1.123
+
+And you run docker above , the master uri: 192.168.1.123:11311
+
+You have other computers with ip: 192.168.1.124, 192.168.1.125
+
+So you shoud do : 
+
+                computer 1
+                export ROS_IP=192.168.1.124
+                export ROS_MASTER_URI=192.168.1.123:11311
+
+                computer 2
+                export ROS_IP=192.168.1.125
+                export ROS_MASTER_URI=192.168.1.123:11311
